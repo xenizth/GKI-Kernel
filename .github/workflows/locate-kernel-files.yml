@@ -1,4 +1,4 @@
-    - name: Locate kernel build script
+      - name: Locate kernel build script
         shell: bash
         run: |
           set -e
