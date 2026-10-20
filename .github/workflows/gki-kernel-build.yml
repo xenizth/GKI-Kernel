@@ -224,7 +224,7 @@ jobs:
             CC='ccache clang' \
             HOSTCC='ccache clang' \
             HOSTCXX='ccache clang++' \
-            -j2; then
+            -j"&(nproc)"; then
             BUILD_STATUS=0
             echo 'Kernel build command completed successfully.'
           else
